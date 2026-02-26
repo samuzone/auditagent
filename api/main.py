@@ -105,7 +105,8 @@ class AuditResponse(BaseModel):
 # Basescan — fetch verified source from Base
 # ─────────────────────────────────────────────
 
-BASESCAN_URL = "https://api.basescan.org/api"
+BASESCAN_URL = "https://api.basescan.org/v2/api"
+
 
 
 def fetch_contract_source(address: str, api_key: str) -> tuple[str, str]:
