@@ -119,6 +119,7 @@ def fetch_contract_source(address: str, api_key: str) -> tuple[str, str]:
         "action": "getsourcecode",
         "address": address,
         "apikey": api_key if api_key else "YourApiKeyToken",
+        "chainid": "8453",
     })
     url = f"{BASESCAN_URL}?{params}"
     logger.info("Fetching contract %s from Basescan", address)
