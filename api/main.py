@@ -105,7 +105,7 @@ class AuditResponse(BaseModel):
 # Basescan — fetch verified source from Base
 # ─────────────────────────────────────────────
 
-BASESCAN_URL = "https://api.basescan.org/v2/api"
+BASESCAN_URL = "https://api.etherscan.io/v2/api"
 
 
 
