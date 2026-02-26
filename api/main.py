@@ -29,7 +29,8 @@ app = FastAPI(title="AuditAgent API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://auditagent-theta.vercel.app", "http://localhost:3000"],
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
